@@ -15,11 +15,12 @@ public class RubyController : MonoBehaviour
     {
         //para usar los ejes
         float horizontal = Input.GetAxis("Horizontal");
-        Debug.Log(horizontal);
+        float vertical = Input.GetAxis("Vertical");
 
         //como nos vamos a desplazar al pulsar las flechas
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f * horizontal;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime; //tiempo que toma Unity para reproducir un marco
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
         transform.position = position;
     }
 }
