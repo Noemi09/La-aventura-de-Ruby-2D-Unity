@@ -15,7 +15,7 @@ C:/Users/NOEMI/Documents/GitHub/La-aventura-de-Ruby-2D-Unity
 -logFile
 Logs/AssetImportWorker151.log
 -srvPort
-53423
+60121
 Successfully changed project path to: C:/Users/NOEMI/Documents/GitHub/La-aventura-de-Ruby-2D-Unity
 C:/Users/NOEMI/Documents/GitHub/La-aventura-de-Ruby-2D-Unity
 Using Asset Import Pipeline V2.
@@ -28,7 +28,7 @@ Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-Refreshing native plugins compatible for Editor in 0.13 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -86,7 +86,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
@@ -114,7 +114,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-Registered in 0.002702 seconds.
+Registered in 0.004122 seconds.
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
@@ -272,29 +272,29 @@ Mono: successfully reloaded assembly
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-- Completed reload, in  1.645 seconds
+- Completed reload, in  1.904 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1645ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1904ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (731ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
+			SetupTypeCache (335ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (213ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (251ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (141ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -304,7 +304,7 @@ Registering precompiled user dll's ...
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-Registered in 0.000195 seconds.
+Registered in 0.000245 seconds.
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
@@ -2452,7 +2452,7 @@ Native extension for WindowsStandalone target not found
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
@@ -4576,33 +4576,33 @@ Mono: successfully reloaded assembly
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
 Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'
-- Completed reload, in  1.220 seconds
+- Completed reload, in  1.724 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1221ms)
-		BeginReloadAssembly (242ms)
+	ReloadAssembly (1724ms)
+		BeginReloadAssembly (339ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (870ms)
-			LoadAssemblies (79ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1183ms)
+			LoadAssemblies (153ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
+			SetupTypeCache (540ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (341ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (351ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (235ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (2ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 Assertion failed on expression: 'm_ErrorCode == MDB_MAP_RESIZED || !HasAbortingErrors()'
 Asset database transaction committed twice!
