@@ -10,6 +10,19 @@ public class HealthCollectible : MonoBehaviour
     //Other es el collider que entro al trigger
     void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("Object that entered the trigger : " + other); //para revisar qué entro al Trigger
+        //Debug.Log("Object that entered the trigger : " + other); //para revisar qué entro al Trigger
+
+        RubyController controller = other.GetComponent<RubyController>(); //da null cuando no puede darte RubyController
+
+        if (controller != null) //null es como nada/vacío
+        {
+            if (controller.health < controller.maxHealth)
+            {
+                controller.ChangeHealth(1);
+                Destroy(gameObject); //Destruye todo lo que pasas como un parámatro, G.O. al cual el script está conectado
+            }
+        }
+
     }
+
 }
