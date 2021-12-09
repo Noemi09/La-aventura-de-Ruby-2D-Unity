@@ -17,17 +17,24 @@ public class EnemyController : MonoBehaviour
     float timer; //mantendrá el valor actual del temporizador
     int direction = 1; //dirección actual de tu enemigo (1/-1)
 
+    Animator animator;
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         timer = changeTime; //timer tiene el valor del temporizador
+
+        animator = GetComponent<Animator>();
+
+        
     }
 
     void Update()
     {
         timer -= Time.deltaTime; //disminuyes el temporizador
+
+        
 
         if (timer < 0) //si el time es menor que 0 cambias de dirección
         {
@@ -41,10 +48,14 @@ public class EnemyController : MonoBehaviour
         if (vertical)
         {
             position.y = position.y + Time.deltaTime * speed * direction; //multiplicas la velocidad por la dirección
+            animator.SetFloat("MoveX", 0);
+            animator.SetFloat("MoveY", direction);
         }
         else
         {
             position.x = position.x + Time.deltaTime * speed * direction;
+            animator.SetFloat("MoveX", direction);
+            animator.SetFloat("MoveY", 0);
         }
         
 
