@@ -8727,30 +8727,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a1d1245b27cf484bb97fbb198294426, type: 3}
---- !u!1 &863713763 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 436723059113960428, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
-  m_PrefabInstance: {fileID: 436723057638635919}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &863713769
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863713763}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &898515166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19154,25 +19130,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 436723059113960427, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 436723059113960427, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 436723059113960427, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
-      propertyPath: m_SpriteTileMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 436723059113960428, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
       propertyPath: m_Name
       value: Ruby
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532642513213437781, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}
-      propertyPath: m_SpriteTilingProperty.adaptiveTiling
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2cdf819b9b184898dde74621ee579, type: 3}

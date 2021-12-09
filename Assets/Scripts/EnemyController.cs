@@ -6,16 +6,16 @@ public class EnemyController : MonoBehaviour
 {
     public float speed = 3.0f;
     public bool vertical;
-    public float changeTime = 3.0f; //momento antes de cambiar la dirección del enemigo
-
+    public float changeTime = 3.0f; //momento antes de cambiar la direcciï¿½n del enemigo
+    private bool broken = true;
     
     Rigidbody2D rigidbody2d;
 
     //necesitas un timer para el movimiento de un lado a otro
-    //El enemigo se mueve en una dirección (timer = 0), luego cambia de dirección y reinicia el timer (asi indefinidamente)
+    //El enemigo se mueve en una direcciï¿½n (timer = 0), luego cambia de direcciï¿½n y reinicia el timer (asi indefinidamente)
     
-    float timer; //mantendrá el valor actual del temporizador
-    int direction = 1; //dirección actual de tu enemigo (1/-1)
+    float timer; //mantendrï¿½ el valor actual del temporizador
+    int direction = 1; //direcciï¿½n actual de tu enemigo (1/-1)
 
     Animator animator;
 
@@ -34,9 +34,12 @@ public class EnemyController : MonoBehaviour
     {
         timer -= Time.deltaTime; //disminuyes el temporizador
 
-        
+        if (!broken)
+        {
+            return;
+        }
 
-        if (timer < 0) //si el time es menor que 0 cambias de dirección
+        if (timer < 0) //si el time es menor que 0 cambias de direcciï¿½n
         {
             direction = -direction;
             timer = changeTime; //reiniciamos el temporizador
@@ -47,7 +50,7 @@ public class EnemyController : MonoBehaviour
 
         if (vertical)
         {
-            position.y = position.y + Time.deltaTime * speed * direction; //multiplicas la velocidad por la dirección
+            position.y = position.y + Time.deltaTime * speed * direction; //multiplicas la velocidad por la direcciï¿½n
             animator.SetFloat("MoveX", 0);
             animator.SetFloat("MoveY", direction);
         }
@@ -71,5 +74,11 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+    }
+
+    public void Fix()
+    {
+        broken = false;
+        GetComponent<Rigidbody2D>().simulated = false;
     }
 }
